@@ -1,0 +1,49 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Track Parcel</title>
+<link rel="stylesheet" href="style.css">
+<script defer src="script.js"></script>
+</head>
+<body>
+
+<header>
+<div class="logo">QuickParcel</div>
+<nav>
+<a href="index.html">Home</a>
+<a href="#services">Services</a>
+<a href="tracking.html">Track Order</a>
+<!-- <a href="#">Pricing</a> -->
+<a href="about.html">Help & Support</a>
+</nav>
+</header>
+
+<section class="tracking-section">
+<h2>Track Your Parcel</h2>
+
+<input type="text" id="trackingId" placeholder="Enter Tracking ID">
+<button onclick="trackParcel()" style="background-color: orangered; color:black;">Track</button>
+
+<div id="trackingOutput"></div>
+</section>
+
+<section class="timeline">
+<h2>Parcel Status Timeline</h2>
+<div class="line"></div>
+<div class="step active">Booked</div>
+<div class="step active">Packed</div>
+<div class="step">In Transit</div>
+<div class="step">Delivered</div>
+</section>
+
+
+
+</body>
+</html>
+
+

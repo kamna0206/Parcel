@@ -1,0 +1,164 @@
+
+
+
+
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QuickParcel</title>
+<link rel="stylesheet" href="style.css">
+<script defer src="script.js"></script>
+</head>
+<body>
+<div class="color">
+  <nav class="navbar">
+    <div class="logo">QuickParcel</div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="tracking.html">Track Order</a></li>
+        <!-- <li><a href="#">Pricing</a></li> -->
+        <li><a href="about.html">Help & Support</a></li>
+    </ul>
+
+     <!-- <div class="nav-buttons">
+        <button class="login-btn">Login</button>
+        <button class="signup-btn">Sign Up</button>
+    </div>  -->
+   
+
+    <div class="nav-buttons">
+   <button class="login-btn" onclick="openLogin()">Login</button>
+
+   <button class="signup-btn" onclick="openSignup()">Sign Up</button>
+</div>
+</nav> 
+
+
+
+<!-- Login Modal -->
+<div class="mmodal" id="lloginModal">
+  <div class="mmodal-box">
+    <span class="cclose" onclick="closeLogin()">&times;</span>
+
+    <h2>Login</h2>
+
+    <input type="text" placeholder="Email or Phone" id="loginUser">
+    <input type="password" placeholder="Password" id="loginPass">
+
+    <button onclick="loginSuccess()">Login</button>
+  </div>
+</div>
+
+<!-- Signup Modal -->
+<div class="mmodal" id="ssignupModal">
+  <div class="mmodal-box">
+    <span class="cclose" onclick="closeSignup()">&times;</span>
+
+    <h2>Sign Up</h2>
+
+    <input type="text" placeholder="Full Name" id="fullname">
+    <input type="text" placeholder="Email or Phone" id="signupUser">
+    <input type="password" placeholder="Password" id="signupPass">
+
+    <button onclick="signupSuccess()">Sign Up</button>
+
+
+    <p>
+  Already have an account?
+  <span onclick="switchToLogin()" style="color:blue; cursor:pointer;">
+    Login
+  </span>
+</p>
+  </div>
+</div>
+
+
+
+
+
+<section class="hero">
+<div>
+<h1>Fast, Reliable &</h1>
+<h1> Secure Parcel Delivery</h1>
+<h1 style="color: orangered;">Across India</h1>
+
+<p style="font-size:20px; ">Ship your parcels safely to any location with</p>
+     <p style="font-size:20px;">real-time tracking and on-time delivery.</p>
+<a href="booking.html" class="btn" style="background-color: orangered;">Book a Parcel</a>
+<a href="tracking.html" class="btn" style="background-color: white; color:black; border:2px solid black" >Track Your Order</Track></a>
+</div>
+</section>
+
+
+<section class="about-company" id="services" style="background-color:bisque;">
+
+    <h1 style="text-align:center;">Why Choose QuickParcel?</h1>
+
+    <p>
+        QuickParcel is a simple and reliable courier parcel service platform
+        designed to make parcel delivery easy, fast and secure for everyone.
+        We help users send packages across different cities with real-time
+        tracking and safe handling services.
+    </p>
+
+    <p>
+        Our system provides smooth parcel booking, delivery updates,
+        secure packaging and customer support services. We focus on
+        timely delivery and customer satisfaction so that users can
+        trust our platform for their important parcels and documents.
+    </p>
+
+    <p>
+        With QuickParcel, customers can easily book a parcel online,
+        check delivery status and get updates anytime. Our platform
+        is user-friendly and designed with a modern interface for
+        better user experience.
+    </p>
+    </section>
+
+    
+      
+<section class="features-section">
+
+    <div class="features-container">
+        <div class="feature-box">
+            
+            <h2>Domestic Delivery</h2>
+            <p>We deliver your parcels<br>safely to all major cities<br>and towns across India<br>with on-time assurance</p>
+        </div>
+
+        <div class="feature-box">
+            
+            <h2>Express Delivery</h2>
+            <p>Track your parcel in real-<br>time from pickpu to<br>delivery and stay updated<br>at every step.</p>
+        </div>
+
+        <div class="feature-box">
+          
+            <h2>Secure Packing</h2>
+            <p>We pack your parcels<br>with high-quality materials<br>to ensure maximum safety<br>and no damage</p>
+        </div>
+
+        <div class="feature-box">
+        
+            <h2>24/7 Support</h2>
+            <p>Our support team help you<br>with parcel booking,tracking<br>updates and delevery related<br>queriesanytime.</p>
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+</html>  
+
+
+
+
+
+

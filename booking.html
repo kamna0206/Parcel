@@ -1,0 +1,74 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Parcel</title>
+<link rel="stylesheet" href="style.css">
+<script defer src="script.js"></script>
+</head>
+<body>
+
+<header>
+<div class="logo">QuickParcel</div>
+<nav>
+<a href="index.html">Home</a>
+<a href="#services">Services</a>
+<a href="tracking.html">Track Order</a>
+<!-- <a href="#">Pricing</a> -->
+<a href="about.html">Help & Support</a>
+</nav>
+</header>
+
+<section class="form-section">
+<h2>Book Your Parcel</h2>
+
+<form id="bookingForm">
+<input type="text" id="sender" placeholder="Sender Name" required>
+<input type="text" id="receiver" placeholder="Receiver Name" required>
+<input type="text" id="pickup" placeholder="Pickup Location" required>
+<input type="text" id="drop" placeholder="Drop Location" required>
+<input type="number" id="weight" placeholder="Weight in KG" oninput="calculateAmount()" required>
+<input type="number" id="amount" placeholder="Amount" readonly>
+<select id="deliveryType" onchange="calculateAmount()">
+    <option value="normal">Normal Delivery (3 Days)</option>
+    <option value="express">Delivery Next day of Pickup(+₹500)</option>
+</select>
+
+
+<select id="paymentMethod" onchange="handlePaymentUI()">
+    <option value="">Select Payment</option>
+    <option value="upi">UPI</option>
+    <option value="card">Card</option>
+    <option value="cash">Cash</option>
+</select>
+<p id="deliveryDate"></p><br><br>
+
+<button type="submit" style="background-color: orangered; color:black;">Confirm Booking</button>
+</form>
+
+<div id="bookingResult"></div>
+</section>
+
+
+<div class="payment-box">
+
+    <div id="upiSection" style="display:none;">
+        <input type="text" id="upiId" placeholder="Enter UPI ID (example@upi)">
+    </div>
+
+    <div id="cardSection" style="display:none;">
+        <input type="text" placeholder="Card Number">
+        <input type="text" placeholder="Expiry Date">
+        <input type="text" placeholder="CVV">
+    </div>
+
+</div>
+
+
+</body>
+</html>
+
