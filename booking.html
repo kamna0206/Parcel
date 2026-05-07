@@ -28,7 +28,11 @@
 
 <form id="bookingForm">
 <input type="text" id="sender" placeholder="Sender Name" required>
+<input type="tel" id="senderPhone" placeholder="Sender Phone Number"
+pattern="[0-9]{10}" required>
 <input type="text" id="receiver" placeholder="Receiver Name" required>
+<input type="tel" id="receiverPhone" placeholder="Receiver Phone Number"
+pattern="[0-9]{10}" required>
 <input type="text" id="pickup" placeholder="Pickup Location" required>
 <input type="text" id="drop" placeholder="Drop Location" required>
 <input type="number" id="weight" placeholder="Weight in KG" oninput="calculateAmount()" required>
